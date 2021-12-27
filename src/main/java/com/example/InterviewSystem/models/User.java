@@ -11,7 +11,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idUser;
     private String nameUser;
-    private RoleUser roleUser;
+    private String roleUser;
     private String password;
 
     public String getPassword() {
@@ -38,11 +38,11 @@ public class User {
         this.nameUser = nameUser;
     }
 
-    public RoleUser getRoleUser() {
+    public String getRoleUser() {
         return roleUser;
     }
 
-    public void setRoleUser(RoleUser roleUser) {
+    public void setRoleUser(String roleUser) {
         this.roleUser = roleUser;
     }
 
