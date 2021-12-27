@@ -11,6 +11,9 @@
 <header th:insert="blocks/header :: header"></header>
 <div class="container mt-5">
     <h1>Вопросы</h1>
+    <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/interview/add" class="nav-link active" aria-current="page">Добавить новый вопрос</a></li>
+    </ul>
     <div th:each = "el : ${questions}" class="alert alert-info mt-2">
         <p th:text="${el.textQuestion}"/>
 
